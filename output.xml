@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220720 15:50:37.837" rpa="false" schemaversion="3">
+<suite id="s1" name="Create Nodes" source="/Users/tusharys/Desktop/robot2/create_nodes.robot">
+<test id="s1-t1" name="Validateip" line="23">
+<kw name="Validateip" library="vars">
+<status status="PASS" starttime="20220720 15:50:37.915" endtime="20220720 15:50:37.915"/>
+</kw>
+<status status="PASS" starttime="20220720 15:50:37.914" endtime="20220720 15:50:37.915"/>
+</test>
+<test id="s1-t2" name="LoginTest" line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<arg>options=${options}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220720 15:50:37.915" level="INFO">Opening browser 'Chrome' to base url 'https://10.66.103.200/zscmui/login'.</msg>
+<msg timestamp="20220720 15:50:40.478" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+0   chromedriver                        0x00000001052a5170 chromedriver + 4477296
+1   chromedriver                        0x000000010523cc18 chromedriver + 4049944
+2   chromedriver                        0x0000000104e8ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104e7f7d8 chromedriver + 128984
+4   chromedriver                        0x0000000104e79e34 chromedriver + 106036
+5   chromedriver                        0x0000000104ee6078 chromedriver + 548984
+6   chromedriver                        0x0000000104eb2f58 chromedriver + 339800
+7   chromedriver                        0x000000010527abd4 chromedriver + 4303828
+8   chromedriver                        0x000000010527f094 chromedriver + 4321428
+9   chromedriver                        0x0000000105283600 chromedriver + 4339200
+10  chromedriver                        0x000000010527faf4 chromedriver + 4324084
+11  chromedriver                        0x000000010525e52c chromedriver + 4187436
+12  chromedriver                        0x0000000105297488 chromedriver + 4420744
+13  chromedriver                        0x00000001052975ec chromedriver + 4421100
+14  chromedriver                        0x00000001052ab92c chromedriver + 4503852
+15  libsystem_pthread.dylib             0x0000000198e6c26c _pthread_start + 148
+16  libsystem_pthread.dylib             0x0000000198e6708c thread_start + 8
+</msg>
+<msg timestamp="20220720 15:50:40.479" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+0   chromedriver                        0x00000001052a5170 chromedriver + 4477296
+1   chromedriver                        0x000000010523cc18 chromedriver + 4049944
+2   chromedriver                        0x0000000104e8ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104e7c5e8 chromedriver + 116200
+4   chromedriver                        0x0000000104e7c120 chromedriver + 114976
+5   chromedriver                        0x0000000104e7b790 chromedriver + 112528
+6   chromedriver                        0x0000000104e7a89c chromedriver + 108700
+7   chromedriver                        0x0000000104e7ad38 chromedriver + 109880
+8   chromedriver                        0x0000000104e89410 chromedriver + 168976
+9   chromedriver                        0x0000000104e7beec chromedriver + 114412
+10  chromedriver                        0x0000000104e7cb60 chromedriver + 117600
+11  chromedriver                        0x0000000104e7c13c chromedriver + 115004
+12  chromedriver                        0x0000000104e7b790 chromedriver + 112528
+13  chromedriver                        0x0000000104e7a89c chromedriver + 108700
+14  chromedriver                        0x0000000104e7ad38 chromedriver + 109880
+15  chromedriver                        0x0000000104e87fc0 chromedriver + 163776
+16  chromedriver                        0x0000000104ee6a34 chromedriver + 551476
+17  chromedriver                        0x0000000104eb2f58 chromedriver + 339800
+18  chromedriver                        0x000000010527abd4 chromedriver + 4303828
+19  chromedriver                        0x000000010527f094 chromedriver + 4321428
+20  chromedriver                        0x0000000105283600 chromedriver + 4339200
+21  chromedriver                        0x000000010527faf4 chromedriver + 4324084
+22  chromedriver                        0x000000010525e52c chromedriver + 4187436
+23  chromedriver                        0x0000000105297488 chromedriver + 4420744
+24  chromedriver                        0x00000001052975ec chromedriver + 4421100
+25  chromedriver                        0x00000001052ab92c chromedriver + 4503852
+26  libsystem_pthread.dylib             0x0000000198e6c26c _pthread_start + 148
+27  libsystem_pthread.dylib             0x0000000198e6708c thread_start + 8
+</msg>
+<status status="FAIL" starttime="20220720 15:50:37.915" endtime="20220720 15:50:40.481"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath_for_userid}</arg>
+<arg>${userid}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 15:50:40.482" endtime="20220720 15:50:40.482"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${xpath_for_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 15:50:40.482" endtime="20220720 15:50:40.482"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${click_on_signin_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 15:50:40.482" endtime="20220720 15:50:40.482"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${mips}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220720 15:50:40.482" endtime="20220720 15:50:40.482"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220720 15:50:40.482" endtime="20220720 15:50:40.482"/>
+</kw>
+<status status="FAIL" starttime="20220720 15:50:37.915" endtime="20220720 15:50:40.482">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+0   chromedriver                        0x00000001052a5170 chromedriver + 4477296
+1   chromedriver                        0x000000010523cc18 chromedriver + 4049944
+2   chromedriver                        0x0000000104e8ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104e7c5e8 chromedriver + 116200
+4   chromedriver                        0x0000000104e7c120 chromedriver + 114976
+5   chromedriver                        0x0000000104e7b790 chromedriver + 112528
+6   chromedriver                        0x0000000104e7a89c chromedriver + 108700
+7   chromedriver                        0x0000000104e7ad38 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000104eb2f58 chromedriver + 339800
+18  chromedriver                        0x000000010527abd4 chromedriver + 4303828
+19  chromedriver                        0x000000010527f094 chromedriver + 4321428
+20  chromedriver                        0x0000000105283600 chromedriver + 4339200
+21  chromedriver                        0x000000010527faf4 chromedriver + 4324084
+22  chromedriver                        0x000000010525e52c chromedriver + 4187436
+23  chromedriver                        0x0000000105297488 chromedriver + 4420744
+24  chromedriver                        0x00000001052975ec chromedriver + 4421100
+25  chromedriver                        0x00000001052ab92c chromedriver + 4503852
+26  libsystem_pthread.dylib             0x0000000198e6c26c _pthread_start + 148
+27  libsystem_pthread.dylib             0x0000000198e6708c thread_start + 8</status>
+</test>
+<test id="s1-t3" name="Nodes" line="35">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20220720 15:50:40.495" endtime="20220720 15:50:40.495">Failure occurred and exit-on-failure mode is in use.</status>
+</test>
+<status status="FAIL" starttime="20220720 15:50:37.838" endtime="20220720 15:50:40.496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="1" fail="2" skip="0" id="s1" name="Create Nodes">Create Nodes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220720 15:50:40.478" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: window was already closed
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+0   chromedriver                        0x00000001052a5170 chromedriver + 4477296
+1   chromedriver                        0x000000010523cc18 chromedriver + 4049944
+2   chromedriver                        0x0000000104e8ed40 chromedriver + 191808
+3   chromedriver                        0x0000000104e7f7d8 chromedriver + 128984
+4   chromedriver                        0x0000000104e79e34 chromedriver + 106036
+5   chromedriver                        0x0000000104ee6078 chromedriver + 548984
+6   chromedriver                        0x0000000104eb2f58 chromedriver + 339800
+7   chromedriver                        0x000000010527abd4 chromedriver + 4303828
+8   chromedriver                        0x000000010527f094 chromedriver + 4321428
+9   chromedriver                        0x0000000105283600 chromedriver + 4339200
+10  chromedriver                        0x000000010527faf4 chromedriver + 4324084
+11  chromedriver                        0x000000010525e52c chromedriver + 4187436
+12  chromedriver                        0x0000000105297488 chromedriver + 4420744
+13  chromedriver                        0x00000001052975ec chromedriver + 4421100
+14  chromedriver                        0x00000001052ab92c chromedriver + 4503852
+15  libsystem_pthread.dylib             0x0000000198e6c26c _pthread_start + 148
+16  libsystem_pthread.dylib             0x0000000198e6708c thread_start + 8
+</msg>
+</errors>
+</robot>
