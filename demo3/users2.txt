@@ -1,0 +1,7 @@
+admin@pavan.com Admin@123
+admin@nithin.com Admin@123
+mounika@nithin.com Admin@123
+kannan@nithin.com Admin@123
+dev@nithin.com Admin@123
+mani@nithin.com Admin@123
+admin@nitish.com Admin@123
